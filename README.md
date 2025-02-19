@@ -48,3 +48,6 @@
 - [Yanet Niguse - `yanetniguse`]
 - [Dhruv Pokhariyal - `P0lcahontas`]
 - [Kwame Lucheveli - `luche3002`]
+
+## Instructor
+Prof: `Austin Odera`
