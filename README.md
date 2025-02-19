@@ -44,7 +44,7 @@
 - Allow users to `customize weightings` for different attributes.
 
 ## Contributors
-[James Otieno - `jayotieno`]
-[Yanet Niguse - `yanetniguse`]
-[Dhruv Pokhariyal - `P0lcahontas`]
-[Kwame Lucheveli - `luche3002`]
+- [James Otieno - `jayotieno`]
+- [Yanet Niguse - `yanetniguse`]
+- [Dhruv Pokhariyal - `P0lcahontas`]
+- [Kwame Lucheveli - `luche3002`]
