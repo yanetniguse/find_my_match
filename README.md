@@ -31,17 +31,17 @@
 1. `Create at least 5 user profiles` and store them in the system.
 2. `Run the matchmaking function` for one of the profiles and display the top matches with scores.
 3. `Analyze the output` and explain why certain users were matched.
-`Deliverables:`
-- Code Implementation: A Python script or Jupyter Notebook with the matchmaking system.
-- Report (2-3 pages):
-  - System overview and design explanation.
-  - Description of rules and scoring logic.
-  - Screenshots or outputs of matchmaking results.
-  - Reflection on limitations and possible improvements.
-`If possible:`
-- Implement `gender preferences` in matchmaking.
-- Add a `GUI or web interface` for user interaction.
-- Allow users to `customize weightings` for different attributes.
+- `Deliverables:`
+  - Code Implementation: A Python script or Jupyter Notebook with the matchmaking system.
+  - Report (2-3 pages):
+    - System overview and design explanation.
+    - Description of rules and scoring logic.
+    - Screenshots or outputs of matchmaking results.
+    - Reflection on limitations and possible improvements.
+- `If possible:`
+  - Implement `gender preferences` in matchmaking.
+  - Add a `GUI or web interface` for user interaction.
+  - Allow users to `customize weightings` for different attributes.
 
 ## Contributors
 - [James Otieno - `jayotieno`]
