@@ -1,53 +1,97 @@
-# FIND MY MATCH
-## Assignment:Developing a Rule-Based Matchmaking System for a Dating Application(In your groups)
-## Instructions
+💞 Find My Match – Rule-Based Dating Compatibility System
+A rule-based expert system to simulate human decision-making in relationship matchmaking.
+Developed as a final project for APT 3020B Artificial Intelligence, USIU-Africa.
 
-### Part 1: System Overview & Design
-1. Explain the purpose of a `rule-based` matchmaking system.
-2. Define the `attributes` that will be used for matchmaking (e.g., age, location, interests, gender preference).
-3. Describe the `scoring rules` for compatibility (e.g., shared interests = +10 points, same city = +5 points, age gap > 10 years = -5 points).
-4. Define the `data structure` to store user profiles (e.g., dictionaries, lists, or classes in Python).
+🧠 Overview
+Find My Match is a web-based matchmaking system built using a knowledge-based approach. It analyzes user profile data—such as age, faith, interests, education, and values—to calculate a compatibility score between two people.
 
-### Part 2: Implementation
-1. `Create a Profile Management System:`
-- Implement a system to add, remove, and retrieve user profiles.
-- Each profile should include attributes such as:
-  - Name
-  - Age
-  - Gender
-  - Interests (list of hobbies)
-  - Location
-2. `Develop a Matching Algorithm:`
-- Implement a function to compare two profiles based on predefined rules.
-- Assign compatibility scores using weighted attributes:
-  - `Age difference:` Normalize and assign a score.
-  - `Shared interests:` Calculate a similarity score (e.g., Jaccard Index).
-  - `Location:` Exact match gets a higher score.
-3. `Find Best Matches:`
-- Implement a function that takes a user ID and finds the `top 3 best matches` based on compatibility scores.
-- Sort matches in `descending order of compatibility.`
+This project demonstrates how rule-based reasoning can be applied in matchmaking through a Knowledge-Based System (KBS).
 
-### Part 3: Testing & Evaluation
-1. `Create at least 5 user profiles` and store them in the system.
-2. `Run the matchmaking function` for one of the profiles and display the top matches with scores.
-3. `Analyze the output` and explain why certain users were matched.
-- `Deliverables:`
-  - Code Implementation: A Python script or Jupyter Notebook with the matchmaking system.
-  - Report (2-3 pages):
-    - System overview and design explanation.
-    - Description of rules and scoring logic.
-    - Screenshots or outputs of matchmaking results.
-    - Reflection on limitations and possible improvements.
-- `If possible:`
-  - Implement `gender preferences` in matchmaking.
-  - Add a `GUI or web interface` for user interaction.
-  - Allow users to `customize weightings` for different attributes.
+🎯 Features
+🔎 Rule-based compatibility engine
 
-## Contributors
-- [James Otieno - `jayotieno`]
-- [Yanet Niguse - `yanetniguse`]
-- [Dhruv Pokhariyal - `P0lcahontas`]
-- [Kwame Lucheveli - `luche3002`]
+🧬 Custom profile attribute matching (age, faith, hobbies, etc.)
 
-## Instructor
-Prof: `Austin Odera`
+📋 Scoring system with weighted rules
+
+🌐 Web interface built with Flask
+
+🔥 Returns compatibility percentage instantly
+
+🛠️ How It Works
+Attributes Used for Matching
+Age
+
+Gender
+
+Faith + Importance of Faith
+
+Values
+
+Education
+
+Hobbies
+
+Places of Interest
+
+Relationship Goals
+
+Height & Weight (optional)
+
+Compatibility Scoring Rules
+Attribute	Rule Description	Points
+Age Gap	≤ 5 years: +10, >10 years: -5	Age Normalized
+Shared Faith	Exact match: +10	High
+Faith Importance	Both high: +5	Medium
+Shared Values	Exact match: +10	High
+Hobbies	Each match: +3	Medium
+Places	Each match: +2	Low
+Education Level	Match: +5	Medium
+🧪 Sample Usage
+User 1 and User 2 fill in a form with their profile data
+
+System processes and calculates their match score
+
+Result is rendered with the compatibility percentage
+
+Example Output:
+
+bash
+Copy
+Edit
+User A & User B compatibility: 84%
+Shared values, interests, and faith contribute to high compatibility.
+💻 Tech Stack
+Backend: Python (Flask)
+
+Frontend: HTML + Jinja2 Templates
+
+Logic Engine: Custom rule-based compatibility system
+
+Data Handling: In-memory dictionaries (can be extended to DB)
+
+📚 Academic Context
+This project was built as part of the coursework for:
+
+Course: APT 3020B – Artificial Intelligence
+Instructor: Prof. Austin Odera
+Based on Reference Text:
+“Knowledge-Based Systems” by Rajendra Akerkar & P. Sajja
+
+👨‍💻 Contributors
+Name	GitHub Handle
+James Otieno	@jayotieno
+Yanet Niguse	@yanetniguse
+Dhruv Pokhariyal	@P0lcahontas
+Kwame Lucheveli	@luche3002
+🚀 Try It Out
+Clone this repo:
+
+bash
+Copy
+Edit
+git clone https://github.com/yanetniguse/find_my_match.git
+cd find_my_match
+python app.py
+Access it in your browser:
+http://localhost:5000
