@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find My Match</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Find Your Match</h1>
+        <form method="POST">
+            <div class="row">
+                <!-- User 1 Inputs -->
+                <div class="col-md-6">
+                    <h4>User 1</h4>
+                    <div class="form-group">
+                        <label for="age1">Age</label>
+                        <input type="number" class="form-control" id="age1" name="age1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="faith_importance1">Faith Importance (1 to 5)</label>
+                        <input type="number" class="form-control" id="faith_importance1" name="faith_importance1" required min="1" max="5">
+                    </div>
+                    <div class="form-group">
+                        <label for="faith1">Faith</label>
+                        <select class="form-control" id="faith1" name="faith1" required>
+                            <option value="Catholic Christian">Catholic Christian</option>
+                            <option value="Orthodox Christian">Orthodox Christian</option>
+                            <option value="Islam">Islam</option>
+                            <option value="Atheist">Atheist</option>
+                            <option value="Other">Other</option>
+                            <option value="Don't care">Don't care</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="values1">Values</label>
+                        <select class="form-control" id="values1" name="values1" required>
+                            <option value="Family-Oriented">Family-Oriented</option>
+                            <option value="Ambitious">Ambitious</option>
+                            <option value="Adventurous">Adventurous</option>
+                            <option value="Honesty">Honesty</option>
+                            <option value="Kindness">Kindness</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="education1">Education</label>
+                        <select class="form-control" id="education1" name="education1" required>
+                            <option value="High School">High School</option>
+                            <option value="Associate Degree">Associate Degree</option>
+                            <option value="Bachelor's Degree">Bachelor's Degree</option>
+                            <option value="Master's Degree">Master's Degree</option>
+                            <option value="PhD">PhD</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="height1">Height (cm)</label>
+                        <input type="number" class="form-control" id="height1" name="height1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="weight1">Weight (kg)</label>
+                        <input type="number" class="form-control" id="weight1" name="weight1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="relationship_goals1">Relationship Goals</label>
+                        <select class="form-control" id="relationship_goals1" name="relationship_goals1" required>
+                            <option value="Marriage">Marriage</option>
+                            <option value="Serious Relationship">Serious Relationship</option>
+                            <option value="Casual Dating">Casual Dating</option>
+                            <option value="Friendship">Friendship</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="hobbies1">Hobbies (comma separated)</label>
+                        <input type="text" class="form-control" id="hobbies1" name="hobbies1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="places1">Places You Want to Visit (comma separated)</label>
+                        <input type="text" class="form-control" id="places1" name="places1" required>
+                    </div>
+                </div>
+
+                <!-- User 2 Inputs -->
+                <div class="col-md-6">
+                    <h4>User 2</h4>
+                    <div class="form-group">
+                        <label for="age2">Age</label>
+                        <input type="number" class="form-control" id="age2" name="age2" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="faith_importance2">Faith Importance (1 to 5)</label>
+                        <input type="number" class="form-control" id="faith_importance2" name="faith_importance2" required min="1" max="5">
+                    </div>
+                    <div class="form-group">
+                        <label for="faith2">Faith</label>
+                        <select class="form-control" id="faith2" name="faith2" required>
+                            <option value="Catholic Christian">Catholic Christian</option>
+                            <option value="Orthodox Christian">Orthodox Christian</option>
+                            <option value="Islam">Islam</option>
+                            <option value="Atheist">Atheist</option>
+                            <option value="Other">Other</option>
+                            <option value="Don't care">Don't care</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="values2">Values</label>
+                        <select class="form-control" id="values2" name="values2" required>
+                            <option value="Family-Oriented">Family-Oriented</option>
+                            <option value="Ambitious">Ambitious</option>
+                            <option value="Adventurous">Adventurous</option>
+                            <option value="Honesty">Honesty</option>
+                            <option value="Kindness">Kindness</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="education2">Education</label>
+                        <select class="form-control" id="education2" name="education2" required>
+                            <option value="High School">High School</option>
+                            <option value="Associate Degree">Associate Degree</option>
+                            <option value="Bachelor's Degree">Bachelor's Degree</option>
+                            <option value="Master's Degree">Master's Degree</option>
+                            <option value="PhD">PhD</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="height2">Height (cm)</label>
+                        <input type="number" class="form-control" id="height2" name="height2" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="weight2">Weight (kg)</label>
+                        <input type="number" class="form-control" id="weight2" name="weight2" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="relationship_goals2">Relationship Goals</label>
+                        <select class="form-control" id="relationship_goals2" name="relationship_goals2" required>
+                            <option value="Marriage">Marriage</option>
+                            <option value="Serious Relationship">Serious Relationship</option>
+                            <option value="Casual Dating">Casual Dating</option>
+                            <option value="Friendship">Friendship</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="hobbies2">Hobbies (comma separated)</label>
+                        <input type="text" class="form-control" id="hobbies2" name="hobbies2" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="places2">Places You Want to Visit (comma separated)</label>
+                        <input type="text" class="form-control" id="places2" name="places2" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Link to Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
