@@ -1,10 +1,11 @@
 from flask import Flask, render_template, request, redirect, url_for
 from models import KnowledgeBase, Matchmaker
 
+# Initialize Flask app and dependencies
 app = Flask(__name__)
 
-kb = KnowledgeBase()
-matchmaker = Matchmaker(kb)
+kb = KnowledgeBase()# KnowledgeBase instance to store user profiles
+matchmaker = Matchmaker(kb)  # Matchmaker instance to calculate compatibility
 
 @app.route("/", methods=["GET", "POST"])
 def index():
