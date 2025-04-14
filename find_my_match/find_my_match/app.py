@@ -7,6 +7,7 @@ app = Flask(__name__)
 kb = KnowledgeBase()# KnowledgeBase instance to store user profiles
 matchmaker = Matchmaker(kb)  # Matchmaker instance to calculate compatibility
 
+# Define the route for the homepage ("/") which handles both GET and POST requests.
 @app.route("/", methods=["GET", "POST"])
 def index():
     if request.method == "POST":
@@ -23,6 +24,7 @@ def index():
             'hobbies': request.form['hobbies1'].split(','),
             'places': request.form['places1'].split(',')
         }
+                # Retrieve data for the second user from the submitted form.
         user2_profile = {
             'age': int(request.form['age2']),
             'faith_importance': int(request.form['faith_importance2']),
